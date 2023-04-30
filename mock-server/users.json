@@ -1,0 +1,19 @@
+{
+  "users": [
+    {
+      "email": "vickyadi243@gmail.com",
+      "password": "$2a$10$y7qm2J9PLeGjZLy4PXJAS.fUp1f0/JqvThtxNfA/lHuDeXMqpLuny",
+      "id": 1
+    },
+    {
+      "email": "vicky@gmail.com",
+      "password": "$2a$10$L1WAnypLRCg1urXfflxLXuzcGVf.qaWZhrkYo9qQKa0FaCqaP42Ea",
+      "id": 2
+    },
+    {
+      "email": "vickyadi@gmail.com",
+      "password": "$2a$10$tMaHGaq6EKqVAZkBwfz3POyKv51BkqgEoQ8JTXkcm0danPPVGm31O",
+      "id": 3
+    }
+  ]
+}

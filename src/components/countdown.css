@@ -1,0 +1,14 @@
+.stacked {
+  display: grid;
+  place-items: center;
+  isolation: isolate;
+}
+
+.stacked > * {
+  grid-column: 1 / -1;
+  grid-row: 1 / -1;
+}
+
+.stacked > .media {
+  z-index: -1;
+}
