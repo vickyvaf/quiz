@@ -25,11 +25,11 @@ export default function Answer({ answers }: Props) {
     }
 
     /**  Move on to the next question once has provided an answer  */
-    // if (state.currentQuestion < state.quiz.length - 1) {
-    //   setTimeout(() => {
-    //     dispatch({ type: "NEXT_QUIZ" });
-    //   }, 1500);
-    // }
+    if (state.currentQuestion < state.quiz.length - 1) {
+      setTimeout(() => {
+        dispatch({ type: "NEXT_QUIZ" });
+      }, 1000);
+    }
   };
 
   return (
