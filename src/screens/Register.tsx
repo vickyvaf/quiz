@@ -31,7 +31,7 @@ export default function Register() {
           }, 1500);
         }
       })
-      .catch((err) => toast.error(err.response.data || err?.message));
+      .catch((err) => toast.error(err?.message || err?.response?.data));
   };
 
   return (

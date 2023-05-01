@@ -33,9 +33,6 @@ export default function Home() {
             dispatch({ type: "FETCH_ERROR", payload: err?.message });
           });
         break;
-      case "onplay_quiz":
-        dispatch({ type: "RESUME_QUIZ" });
-        break;
       default:
         break;
     }
@@ -49,6 +46,10 @@ export default function Home() {
       JSON.stringify(state.questionHasAnswered)
     );
   }, [state]);
+
+  useEffect(() => {
+    dispatch({ type: "RESUME_QUIZ" });
+  }, []);
 
   return (
     <>

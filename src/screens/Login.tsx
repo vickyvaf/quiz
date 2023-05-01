@@ -30,7 +30,7 @@ export default function Login() {
           return navigate("/");
         }
       })
-      .catch((err) => toast.error(err.response.data || err?.message));
+      .catch((err) => toast.error(err?.message || err?.response?.data));
   };
 
   return (

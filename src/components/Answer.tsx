@@ -23,9 +23,13 @@ export default function Answer({ answers }: Props) {
       state.quizHasAnswered[state.currentQuestion] = data || data;
       dispatch({ type: "RESUME_QUIZ" });
     }
-    if (state.currentQuestion < state.quiz.length - 1) {
-      dispatch({ type: "NEXT_QUIZ" });
-    }
+
+    /**  Move on to the next question once has provided an answer  */
+    // if (state.currentQuestion < state.quiz.length - 1) {
+    //   setTimeout(() => {
+    //     dispatch({ type: "NEXT_QUIZ" });
+    //   }, 1500);
+    // }
   };
 
   return (
@@ -47,7 +51,6 @@ export default function Answer({ answers }: Props) {
             container
             key={i}
             sx={{
-              // minHeight: "100px",
               placeItems: "center",
               justifyContent: "center",
               textAlign: "center",
